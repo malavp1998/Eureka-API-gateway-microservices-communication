@@ -17,6 +17,15 @@ public class RatingsResource {
 
     @RequestMapping("/user/{userId}")
     public UserRating getUserRatings(@PathVariable("userId") String userId) {
+      // testing timeout functionality implemented in movie-catalog-service
+       try {
+           Thread.sleep(6000);
+       }
+       catch (Exception e)
+       {
+
+       }
+
         UserRating userRating = new UserRating();
         userRating.initData(userId);
         return userRating;

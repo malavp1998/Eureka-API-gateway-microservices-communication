@@ -1,6 +1,7 @@
 package io.pm.movieinfoservice.resources;
 
 import io.pm.movieinfoservice.models.Movie;
+import io.pm.movieinfoservice.models.MovieSummary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,9 +21,9 @@ public class MovieResource {
 
     @RequestMapping("/{movieId}")
     public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
-        //MovieSummary movieSummary = restTemplate.getForObject("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" +  apiKey, MovieSummary.class);
+//        MovieSummary movieSummary = restTemplate.getForObject("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" +  apiKey, MovieSummary.class);
 //        return new Movie(movieId, movieSummary.getTitle(), movieSummary.getOverview());
-        return new Movie(movieId, "movieSummary.getTitle()", "movieSummary.getOverview()");
+     return new Movie(movieId, "movieSummary.getTitle()", "movieSummary.getOverview()");
 
     }
 
