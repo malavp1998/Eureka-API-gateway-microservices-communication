@@ -1,4 +1,4 @@
-# Eureka-or-discovery-server-microservices-communication
+# Eureka-API Gateway-server-microservices-communication
 In this project 3 mircroservices(Eureka Client) is communicating with other microservice( Eureka Server)
 
 From this project you will learn
